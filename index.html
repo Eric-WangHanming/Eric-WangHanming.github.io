@@ -4,6 +4,25 @@
 		<meta charset="utf-8">
 		<title>王韩铭的博客</title>
 		<link href="index.css" type="text/css" rel="stylesheet"/>
+		<script>
+			document.onkeydown=function(){
+				var e = window.event||arguments[0];
+				window.console.log(e);
+				if(e.keyCode == 123){//防止F12
+						return false;
+				}else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode == 73)){//查看源代码快捷键
+						return false;
+				}else if((e.ctrlKey)&&(e.keyCode==85)){//查看源代码快捷键
+						return false;
+				}else if((e.ctrlKey)&&(e.keyCode==83)){//保持网页快捷键
+					   return false;
+				}
+			}
+			document.oncontextmenu=function(){//监听鼠标右键
+				return false;
+			}
+		</script>
+
 	</head>
 	<body>
 		<div>
