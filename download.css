@@ -4,6 +4,12 @@ p.title{
 	font-family:"黑体";
 	font-size:45px;
 }
+a.ppt_1{
+	line-height:15px;
+	text-align:center;
+	font-family:"黑体";
+	font-size:25px;
+}
 html,body{
 	background-color:#E4E4E4;
 }
